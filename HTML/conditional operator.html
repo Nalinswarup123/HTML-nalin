@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head><title>if else</title></head>
+<body>
+<form>
+Age is:<input type="text"  id="t1"><br>
+working hours<input type="text"  id="t2"><br>
+salary<input type="text" id="t3"><br>
+<input type="button" value="click"  onclick="myfun()">
+</form>
+<script>
+function myfun()
+{
+var a,b;
+a=document.getElementById("t1").value;
+if(a<18)
+{
+window.alert("very young,can't work");
+}
+else if(a>=18 && a<=24)
+{
+document.getElementById("t2").value=4;
+document.getElementById("t3").value=6000;
+}
+else if(a>24 && a<=45)
+{
+document.getElementById("t2").value=12;
+document.getElementById("t3").value=60000;
+}
+else
+{
+alert("retire");
+}
+}
+
+</script>
+</body>
+</html>

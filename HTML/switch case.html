@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head><title>switch</title></head>
+<body>
+<form>
+Age is:<input type="text" value="60" id="t1"><br>
+working hours<input type="text"  id="t2"><br>
+salary<input type="text" id="t3"><br>
+</form>
+<script>
+var a,b;
+a=Number(document.getElementById("t1").value);
+switch(true)
+{
+case a<18:
+window.alert("very young,can't work");
+break;
+
+case(a>=18 && a<=24):
+document.getElementById("t2").value=4;
+document.getElementById("t3").value=6000;
+break;
+
+case(a>24 && a<=45):
+document.getElementById("t2").value=12;
+document.getElementById("t3").value=60000;
+break;
+
+default:
+alert("retire");
+break;
+}
+</script>
+
+<!-- WHILE LOOP -->
+
+<script>
+var a,b;
+a=3;
+b=1;
+while(b<=10)
+{
+document.write(a+"*"+b+"=" +(a*b)+"<br>");
+b++;
+}
+</script>
+
+<!-- DO WHILE LOOP -->
+<script>
+var a,b;
+a=4;
+b=1;
+do
+{
+document.write(a+"*"+b+"=" +(a*b)+"<br>");
+b++;
+}
+while(b<=10);
+</script>
+
+
+</body>
+</html>

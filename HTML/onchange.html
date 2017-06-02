@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<body id="r">
+<form>
+select your favourite browser:
+<select id="mylist" onchange="myfunction()">
+<option></option>
+<option>red</option>
+<option>blue</option>
+<option>green</option>
+</select>
+</form>
+<script>
+function myfunction()
+{
+var a=document.getElementById("mylist").value;
+document.getElementById("r").style.background=a;
+}
+</script>
+</body>
+</html>

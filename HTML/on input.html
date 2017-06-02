@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<body>
+dollar<input type="text" id="1"  oninput="fun1()">
+rs<input type="text" id="2" oninput="fun2()">
+<p id="p1">ONINPUT EVENT</p>
+<script>
+function fun1()
+{
+var a=document.getElementById("1").value;
+document.getElementById("2").value=a*65;
+document.getElementById("p1").style.fontSize="100px";
+}
+
+function fun2()
+{
+b=document.getElementById("2").value;
+document.getElementById("1").value=b/60;
+}
+
+</script>
+</body>
+</html>

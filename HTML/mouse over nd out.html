@@ -1,0 +1,32 @@
+<!doctype type html>
+<html>
+<body>
+<script>
+function f1()
+{
+document.getElementById("t").style.color="red";
+document.getElementById("p1").style.background="red";
+}
+function f2()
+{
+document.getElementById("t").style.color="blue";
+document.getElementById("p1").style.background="blue";
+}
+function bigimg()
+{
+document.getElementById("i1").style.height="640px";
+document.getElementById("i1").style.width="640px";
+}
+function smallimg()
+{
+document.getElementById("i1").style.height="320px";
+document.getElementById("i1").style.width="320px";
+}
+
+</script>
+<h1 id="t" onmouseover="f1()" onmouseout="f2()">
+mouse over this text</h1>
+<input type="text" id="p1" onmouseover="f1()" onmouseout="f2()">
+<br><img src="E:\Pictures\wp\401425.jpg" id="i1" onmouseover="bigimg()" onmouseout="smallimg()" alt="HULK" width="100" height="100">
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head><title>color of button</title>
+<script>
+function change()
+{
+var c=document.getElementById("a").value;
+document.getElementById("b").style.background=c;
+}
+</script>
+</head>
+<body>
+
+select a color<select id="a" onchange="change()">
+<option>red</option>
+<option>blue</option>
+<option>yellow</option>
+</select>
+<input type="button" id="b" value="click">
+</body>
+</html>

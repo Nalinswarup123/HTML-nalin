@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+function prime()
+{
+var a=document.getElementById("t1").value;
+var c=0;
+for(var i=2;i<=a/2;i++)
+{
+if(a%i==0)
+{
+c=1;
+break;
+}
+}
+if(c==1)
+{
+document.getElementById("t2").value="not prime";
+}
+else
+{
+document.getElementById("t2").value="prime";
+}
+}
+</script>
+</head>
+<body>
+<input type="text" id="t1";>
+<input type="text" id="t2";>
+<input type="button" value="click" onclick="prime()">
+</body>
+</html>

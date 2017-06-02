@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head><noscript>his browser does not support script</noscript></head>
+<body>
+<p id="p1">hello</p>
+<form>
+<input type="text" value="30" id="t1"><br>
+<input type="text" value="11" id="t2"><br>
+sum is:<input type="text" id="t3"><br>
+sub is:<input type="text" id="t4"><br>
+div is:<input type="text" id="t5"><br>
+mul is:<input type="text" id="t6"><br>
+mod is:<input type="text" id="t7"><br>
+</form>
+<script>
+var a,b;
+a=Number(document.getElementById("t1").value);
+b=Number(document.getElementById("t2").value);
+document.getElementById("t3").value=a+b;
+document.getElementById("t4").value=a-b;
+document.getElementById("t5").value=a/b;
+document.getElementById("t6").value=a*b;
+document.getElementById("t7").value=a%b;
+document.getElementById("p1").innerHTML+="HELLO";
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<!doctype html>
+<html>
+<head><title>color of button</title></head>
+<body>
+<p><input type="submit"></p>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function myfun()
+{
+var x=document.getElementById("fname").value;
+document.getElementById("fname").value=x.toUpperCase();
+}
+</script>
+</head>
+<body>
+<p> A func is triggered when user releases a key </p>
+enter ur name:<input type="text"
+id="fname" onkeyup="myfun()">
+</body>
+</html>

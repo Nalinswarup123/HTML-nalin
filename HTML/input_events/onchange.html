@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form id="p">
+
+Select your favorite browser:
+<select id="myList" onchange="myFunction()">
+  <option></option>
+  <option>Red</option>
+  <option>Blue</option>  
+  <option>Green</option>
+  
+</select>
+<input type="button" value="click" onclick="myFun()">
+<p>Your favorite browser is: <input type="text" id="demo" size="20"></p>
+</form>
+
+<script>
+function myFunction() {
+a=document.getElementById("myList").value;
+document.getElementById("p").style.backgroundColor= a;
+}
+function myFun() {
+b=document.getElementById("demo").value;
+document.getElementById("p").style.backgroundColor= b;
+}
+
+</script>
+
+</body>
+</html>
